@@ -1,0 +1,28 @@
+:root {
+    --color-header: #1d1d1d;
+    --color-header-hr: #eeeeee;
+    --color-title-text: #1d1d1d;
+    --color-main-text: #1d1d1d;
+    --color-article-tab-date-preview: white;
+    --color-middle-button-text: #212529;
+    --color-small-button-text: white;
+    --color-reverse-button-text: #faa755;
+    --color-article-code-area-border-left: #212529;
+    --color-footer-text: white;
+    --color-article-link: white;
+
+    --color-background-header: #f58220;
+    --color-background-main-area: #f58220;
+    --color-background-body: #faa755;
+    --color-background-article-ol-comment: #faa755;
+    --color-background-footer: #faa755;
+    --color-background-middle-button: #faa755;
+    --color-background-middle-button-border: #faa755;
+    --color-background-small-button: #faa755;
+    --color-background-small-button-border: #faa755;
+    --color-background-reverse-button: #1d1d1d;
+    --color-background-article-tag: white;
+    --color-background-shadow: #faa755;
+    --color-background-comment-edit: #f47920;
+}
+
