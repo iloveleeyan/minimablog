@@ -1,0 +1,91 @@
+.markdown-css > p {
+    font-size: var(--font-size-24px)
+}
+
+.article-content {
+    font-size: var(--font-size-18px)
+}
+
+.article-title a {
+    font-size: var(--font-size-34px)
+}
+
+.comment-content {
+    font-size: var(--font-size-20px)
+}
+
+.comment-name {
+    font-size: var(--font-size-20px)
+}
+
+.comment-city {
+    font-size: var(--font-size-20px)
+}
+
+.header-title-text {
+    font-size: var(--font-size-52px)
+}
+
+.header-intro {
+    font-size: var(--font-size-30px)
+}
+
+.content-album-desc {
+    font-size: var(--font-size-16px);
+}
+
+.markdown-css .content-album .page-header h1 {
+    font-size: var(--font-size-24px);
+}
+
+.markdown-css pre {
+    font-size: var(--font-size-24px);
+}
+
+.markdown-css > p > code {
+    font-size: var(--font-size-24px);
+}
+
+.markdown-css a {
+    font-size: var(--font-size-24px);
+}
+
+.markdown-css ul {
+    font-size: var(--font-size-24px);
+}
+
+.markdown-css ol li {
+    font-size: var(--font-size-24px);
+}
+
+.markdown-css h3 {
+    font-size: var(--font-size-28px);
+}
+
+.widget-side-container .widget-side-container-title {
+    font-size: var(--font-size-18px)
+}
+
+.widget-side-comment-statistic > div {
+    font-size: var(--font-size-18px)
+}
+
+.widget-side-container .article-one-title {
+    font-size: var(--font-size-18px);
+}
+
+.main .page-header .el-page-header__title {
+    font-size: var(--font-size-24px);
+}
+
+.main .page-header .el-page-header__content {
+    font-size: var(--font-size-24px);
+}
+
+.main .page-header .el-icon {
+    font-size: var(--font-size-24px);
+}
+
+
+
+

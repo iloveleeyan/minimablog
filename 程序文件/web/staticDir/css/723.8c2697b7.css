@@ -1,0 +1,27 @@
+.framework {
+    width: 1315px;
+}
+
+.main {
+    width: 960px;
+}
+
+.widget-side-container-title:hover {
+    text-decoration: initial;
+    cursor: initial;
+}
+
+.widget-side-container-title {
+    background-color: var(--color-background-main-area);
+    padding-top: 30px;
+}
+
+.el-footer {
+    margin-top: 20px;
+}
+
+.widget-side-container-button-goto-top {
+    right: 120px;
+    left: calc(50% + 675px);
+}
+
