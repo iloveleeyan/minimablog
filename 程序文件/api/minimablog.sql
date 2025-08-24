@@ -322,7 +322,7 @@ BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for page
+-- Table structure for article_page
 -- ----------------------------
 DROP TABLE IF EXISTS `article_page`;
 CREATE TABLE `article_page` (
@@ -339,13 +339,13 @@ CREATE TABLE `article_page` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- ----------------------------
--- Records of page
+-- Records of article_page
 -- ----------------------------
 BEGIN;
 COMMIT;
 
 -- ----------------------------
--- Table structure for page_content
+-- Table structure for article_page_content
 -- ----------------------------
 DROP TABLE IF EXISTS `article_page_content`;
 CREATE TABLE `article_page_content` (
@@ -358,7 +358,7 @@ CREATE TABLE `article_page_content` (
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- ----------------------------
--- Records of page_content
+-- Records of article_page_content
 -- ----------------------------
 BEGIN;
 COMMIT;
@@ -401,13 +401,14 @@ CREATE TABLE `skin` (
   `id` int NOT NULL AUTO_INCREMENT,
   `name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `content` text CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
+  `author_url` varchar(100) NOT NULL,
   `version` int NOT NULL,
   `color_list` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `create_at` datetime NOT NULL,
   `use_at` datetime NOT NULL,
   `tenant_id` int NOT NULL,
   PRIMARY KEY (`id`,`tenant_id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
 
 -- ----------------------------
 -- Records of skin
@@ -418,14 +419,13 @@ COMMIT;
 -- ----------------------------
 -- Table structure for skin_center
 -- ----------------------------
-DROP TABLE IF EXISTS `skin_center`;
 CREATE TABLE `skin_center` (
   `skin_id` varchar(32) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `name` varchar(20) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `content` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `color_list` varchar(1000) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `image` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `author_tenant_id` int NOT NULL,
+  `author_url` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `download_count` int NOT NULL,
   `praise_count` int NOT NULL,
   `comment_count` int NOT NULL,

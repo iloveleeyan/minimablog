@@ -99,7 +99,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxx 替换成你的百度 ip转城市的 access key（�
 4. 创建静态资源目录 static，如放在 /data/abc.com/static，并填写在下面一步骤的值里
 5. 修改 application-free.yml 里的信息，修改为你的服务器服务配置，并上传到同目录A
 6. 修改 start.sh 里的 cd /data/abc.com/api 这一行的为目录A，其他的无需改
-7. 打开 sql 文件，到第 536 行（INSERT INTO `user` ... 那一行），修改 'https://www.abc.com'（数字 999 前的那段） 为你的前台 url（注意不要在结尾加 / 符号），然后 sql 脚本到mysql 数据库
+7. 打开 sql 文件，到第 549 行（INSERT INTO `user` ... 那一行），修改 'https://www.abc.com'（数字 999 前的那段） 为你的前台 url（注意不要在结尾加 / 符号），然后 sql 脚本到mysql 数据库
 8. 启动 java，执行 start.sh，注意启动前要先给执行文件权限，执行 chmod +x *.sh 即可
 9. 注意留意打印信息，如出现报错则进一步排查。如果没出错，会出现 “程序已启动完毕，端口：9082”这样的打印
 
@@ -124,7 +124,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxx 替换成你的百度 ip转城市的 access key（�
 1. 浏览器打开你的前台 web 的 url，如果能顺利出页面则成功
 2. 如果出现 nginx 502，或者 nginx 默认页，说明你的 nginx 没配置成功
 3. 如果页面框架能显示出来，但是没渲染数据，一般是用于 config.js 没改对的原因，留意上面修改 config.js 一节
-4. 如果浏览器出现页面不断刷新转跳，一般是由于数据库表没改成功，留意上面一节：“7. 打开 sql 文件，到第 536 行（INSERT INTO `user` ... 那一行）”。手动改了数据库后，必须重启程序，修改才能生效
+4. 如果浏览器出现页面不断刷新转跳，一般是由于数据库表没改成功，留意上面一节：“7. 打开 sql 文件，到第 550 行（INSERT INTO `user` ... 那一行）”。手动改了数据库后，必须重启程序，修改才能生效
 5. 如果登入管理后台，登入后马上报错退出到登录页，一般是因为 application-free.yml 的管理后台域名没配对，注意域名后不能带斜杠
 
 ## 注意事项
@@ -133,5 +133,4 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxx 替换成你的百度 ip转城市的 access key（�
 ## 部署结束
 如果还有疑问，加我的 QQ：536671402
 
-或者简笔记官网找日志排查：https://minimablog.cn# minimablog
-# minimablog
+或者简笔记官网找日志排查：https://minimablog.cn

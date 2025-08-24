@@ -1,7 +1,5 @@
 简笔记程序（免费版 0.9.0）使用说明
 
-一个界面简约高效，专注于写作与阅读的博客程序
-
 简笔记官网：https://minimablog.cn
 
 本程序是前后端分离的项目，后端服务是一个，运行环境是 java 17
@@ -67,7 +65,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxx 替换成你的百度 ip转城市的 access key（�
 4. 创建静态资源目录 static，如放在 /data/abc.com/static，并填写在下面一步骤的值里
 5. 修改 application-free.yml 里的信息，修改为你的服务器服务配置，并上传到同目录A
 6. 修改 start.sh 里的 cd /data/abc.com/api 这一行的为目录A，其他的无需改
-7. 打开 sql 文件，到第 536 行（INSERT INTO `user` ... 那一行），修改 'https://www.abc.com'（数字 999 前的那段） 为你的前台 url（注意不要在结尾加 / 符号），然后 sql 脚本到mysql 数据库
+7. 打开 sql 文件，到第 549 行（INSERT INTO `user` ... 那一行），修改 'https://www.abc.com'（数字 999 前的那段） 为你的前台 url（注意不要在结尾加 / 符号），然后 sql 脚本到mysql 数据库
 8. 启动 java，执行 start.sh，注意启动前要先给执行文件权限，执行 chmod +x *.sh 即可
 9. 注意留意打印信息，如出现报错则进一步排查。如果没出错，会出现 “程序已启动完毕，端口：9082”这样的打印
 
